@@ -1,0 +1,14 @@
+exports[`test works 1`] = `
+"
+const a = 1;
+
+debugger;
+if (true) {}"
+`;
+
+exports[`test works 2`] = `
+"
+const a = 1;
+
+if (true) {}"
+`;
