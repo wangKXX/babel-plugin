@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "babel": "babel --plugins ./src/index.js ./src/test.js"
+    "babel": "babel ./src/test.js"
+  },
+  "babel": {
+    "plugins": [ ["./src/index.js", {
+      "noDebugger": true,
+      "removeDebug": true,
+      "exclude": ["info"]
+    }] ]
   },
   "keywords": [],
   "author": "",
